@@ -1,0 +1,33 @@
+C:\Users\Thahir.MSERVER\Documents\Visual Studio 2015\Projects\ePlusReplication\ePlusReplication\bin\Debug\ePlusReplication.exe.config
+C:\Users\Thahir.MSERVER\Documents\Visual Studio 2015\Projects\ePlusReplication\ePlusReplication\obj\x86\Debug\ePlusReplication.csprojResolveAssemblyReference.cache
+C:\Users\Thahir.MSERVER\Documents\Visual Studio 2015\Projects\ePlusReplication\ePlusReplication\obj\x86\Debug\ePlusReplication.frmMain.resources
+C:\Users\Thahir.MSERVER\Documents\Visual Studio 2015\Projects\ePlusReplication\ePlusReplication\obj\x86\Debug\ePlusReplication.frmAbout.resources
+C:\Users\Thahir.MSERVER\Documents\Visual Studio 2015\Projects\ePlusReplication\ePlusReplication\obj\x86\Debug\ePlusReplication.Properties.Resources.resources
+C:\Users\Thahir.MSERVER\Documents\Visual Studio 2015\Projects\ePlusReplication\ePlusReplication\obj\x86\Debug\ePlusReplication.frmStatus.resources
+C:\Users\Thahir.MSERVER\Documents\Visual Studio 2015\Projects\ePlusReplication\ePlusReplication\obj\x86\Debug\ePlusReplication.csproj.GenerateResource.Cache
+C:\Users\Thahir.MSERVER\Documents\Visual Studio 2015\Projects\ePlusReplication\ePlusReplication\obj\x86\Debug\ePlusReplication.exe
+C:\Users\Thahir.MSERVER\Documents\Visual Studio 2015\Projects\ePlusReplication\ePlusReplication\obj\x86\Debug\ePlusReplication.pdb
+C:\Users\Thahir.MSERVER\Documents\Visual Studio 2015\Projects\ePlusReplication\ePlusReplication\bin\Debug\ePlusReplication.exe.manifest
+C:\Users\Thahir.MSERVER\Documents\Visual Studio 2015\Projects\ePlusReplication\ePlusReplication\bin\Debug\ePlusReplication.application
+C:\Users\Thahir.MSERVER\Documents\Visual Studio 2015\Projects\ePlusReplication\ePlusReplication\bin\Debug\ePlusReplication.exe
+C:\Users\Thahir.MSERVER\Documents\Visual Studio 2015\Projects\ePlusReplication\ePlusReplication\bin\Debug\ePlusReplication.pdb
+C:\Users\Thahir.MSERVER\Documents\Visual Studio 2015\Projects\ePlusReplication\ePlusReplication\bin\Debug\MySql.Data.dll
+C:\Users\Thahir.MSERVER\Documents\Visual Studio 2015\Projects\ePlusReplication\ePlusReplication\bin\Debug\MySql.Data.xml
+C:\Users\Thahir.MSERVER\Documents\Visual Studio 2015\Projects\ePlusReplication\ePlusReplication\obj\x86\Debug\ePlusReplication.exe.manifest
+C:\Users\Thahir.MSERVER\Documents\Visual Studio 2015\Projects\ePlusReplication\ePlusReplication\obj\x86\Debug\ePlusReplication.application
+D:\Milestone Toolkit\Bahrain\ePlusReplication\ePlusReplication\bin\Debug\ePlusReplication.exe.config
+D:\Milestone Toolkit\Bahrain\ePlusReplication\ePlusReplication\obj\x86\Debug\ePlusReplication.exe
+D:\Milestone Toolkit\Bahrain\ePlusReplication\ePlusReplication\obj\x86\Debug\ePlusReplication.pdb
+D:\Milestone Toolkit\Bahrain\ePlusReplication\ePlusReplication\bin\Debug\ePlusReplication.exe.manifest
+D:\Milestone Toolkit\Bahrain\ePlusReplication\ePlusReplication\bin\Debug\ePlusReplication.application
+D:\Milestone Toolkit\Bahrain\ePlusReplication\ePlusReplication\bin\Debug\ePlusReplication.exe
+D:\Milestone Toolkit\Bahrain\ePlusReplication\ePlusReplication\bin\Debug\ePlusReplication.pdb
+D:\Milestone Toolkit\Bahrain\ePlusReplication\ePlusReplication\obj\x86\Debug\ePlusReplication.csprojResolveAssemblyReference.cache
+D:\Milestone Toolkit\Bahrain\ePlusReplication\ePlusReplication\obj\x86\Debug\ePlusReplication.frmMain.resources
+D:\Milestone Toolkit\Bahrain\ePlusReplication\ePlusReplication\obj\x86\Debug\ePlusReplication.frmAbout.resources
+D:\Milestone Toolkit\Bahrain\ePlusReplication\ePlusReplication\obj\x86\Debug\ePlusReplication.Properties.Resources.resources
+D:\Milestone Toolkit\Bahrain\ePlusReplication\ePlusReplication\obj\x86\Debug\ePlusReplication.frmStatus.resources
+D:\Milestone Toolkit\Bahrain\ePlusReplication\ePlusReplication\obj\x86\Debug\ePlusReplication.csproj.GenerateResource.Cache
+D:\Milestone Toolkit\Bahrain\ePlusReplication\ePlusReplication\obj\x86\Debug\ePlusReplication.exe.manifest
+D:\Milestone Toolkit\Bahrain\ePlusReplication\ePlusReplication\obj\x86\Debug\ePlusReplication.application
+D:\Milestone Toolkit\Bahrain\ePlusReplication\ePlusReplication\bin\Debug\MySql.Data.dll
