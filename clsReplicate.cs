@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using MySql.Data.MySqlClient;
 using Microsoft.Win32;
+using System.Text.RegularExpressions;
+using System.Data;
+using System.Windows.Forms;
 
 namespace ePlusReplication
 {
@@ -37,6 +40,8 @@ namespace ePlusReplication
         protected string dbCode;
         protected xmlSettings settings;
         protected eMailSettings testMail;
+        private string instId;
+
         public clsReplicate(xmlSettings xmlsettings)
         {
             settings = xmlsettings;
@@ -229,6 +234,7 @@ namespace ePlusReplication
 
         public void verifySQL()
         {
+           
             clsStatus.UdpateStatusText("Checking for pending SQL Commands...\r\n");
             System.Threading.Thread.Sleep(500);
             Boolean result;
@@ -246,6 +252,7 @@ namespace ePlusReplication
                 {
                     clsDBUtility.GetReplicationNextID(LogDBConn, ref  dbCode, ref replicationID, ref errorMessage);
                     query = clsDBUtility.GetReplicationSQL(LogDBConn,dbCode, replicationID, ref errorMessage);
+                    modifyUser(query);
                     result = clsDBUtility.VerifyReplicationSQL(LogDBConn, MainDBInfo.DBName, query, ref errorMessage);
                     clsDBUtility.UpdateReplicationSQL(LogDBConn, "COMMANDSTATUS",dbCode, replicationID, result, ref errorMessage);
                     if (!result)
@@ -341,6 +348,46 @@ namespace ePlusReplication
             eMailBody += "Object Name : " + query.ObjectName + "\r\n";
             eMailBody += "Command String : " + query.CommandString + "\r\n";
             return eMailBody;
+        }
+        public void modifyUser(QueryInfo query)
+        {
+            string xmlPath, xmlSettingsFile;
+            DataSet ds = new DataSet();
+            string SqlLogCommandString = "";
+            
+
+            if (query.CommandString.StartsWith("CREATE USER"))
+            {
+                int pos = ((string)("CREATE USER ")).Length;
+                string user_name = query.CommandString.Substring(pos, query.CommandString.IndexOf(' ', pos) - pos);
+                xmlPath = Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData) + "\\" + Application.ProductName;
+                xmlSettingsFile = xmlPath + "\\Settings.xml";
+                ds.ReadXml(xmlSettingsFile);
+                string DBName = ds.Tables[0].Rows[0]["DATABASE"].ToString();
+                DBName = DBName.Remove(DBName.Length - 5);
+                instId = DBName.Substring(DBName.Length - 3);
+                string newusername = user_name.Substring(user_name.Length - 3);
+                SqlLogCommandString = query.CommandString;
+                SqlLogCommandString = SqlLogCommandString.Replace(newusername, instId);
+
+            }
+
+            if (query.CommandString.StartsWith("GRANT ALL PRIVILEGES"))
+            {
+                int pos = ((string)("GRANT ALL PRIVILEGES ON *.* TO ")).Length;
+                string user_name = query.CommandString.Substring(pos, query.CommandString.IndexOf(' ', pos) - pos);
+                xmlPath = Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData) + "\\" + Application.ProductName;
+                xmlSettingsFile = xmlPath + "\\Settings.xml";
+                ds.ReadXml(xmlSettingsFile);
+                string DBName = ds.Tables[0].Rows[0]["DATABASE"].ToString();
+                DBName = DBName.Remove(DBName.Length - 5);
+                instId = DBName.Substring(DBName.Length - 3);
+                string newusername = user_name.Substring(user_name.Length - 3);
+                SqlLogCommandString = query.CommandString;
+                SqlLogCommandString = SqlLogCommandString.Replace(newusername, instId);
+
+            }
+
         }
     }
 }
